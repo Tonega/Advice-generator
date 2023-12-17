@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+body{
+    background-color: var(--Dark-Blue);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Dark-Grayish-Blue);
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 70px 10px;
+}
+
+.num{
+    text-transform: uppercase;
+    color: var(--Neon-Green);
+    word-spacing: 5px;
+}
+
+.text{
+    color: var(--Light-Cyan);
+    margin: 20px auto;
+    font-size: 28px;
+}
+
+#divide{
+    margin: 20px 0 30px;
+    width: 100%;
+}
+
+#dice{
+    background-color: var(--Neon-Green);
+    border-radius: 50%;
+    padding: 17px 17px 13px;
+    border: 0;
+    cursor: pointer;
+    margin: 0 auto -40px;
+}
+#dice img{
+    width: 25px;
+}
+#dice:hover {
+    box-shadow: 0 0 40px var(--Neon-Green);
+}
+
+.attribution{
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--Light-Cyan);
+}
+
+.attribution a{
+    color: var(--Light-Cyan);
+    text-decoration: none;
+}
+
+.attribution a:hover{
+    color: var(--Neon-Green);
+}
+
+@media (min-width: 580px) {
+    main{
+        margin-left: 380px;
+        margin-right: 380px;
+        padding: 40px 20px;
+    }
+
+    #dice{
+        margin: 0 auto -60px;
+    }
+}
